@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Pages.Exercicio04"
+             Title="Exercício 04">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <TableView Intent="Form" HasUnevenRows="True">
+                <TableRoot>
+                    <TableSection Title="Numero" TextColor="Black">
+                        <EntryCell Label="Digite um número" Height="30" Keyboard="Numeric" x:Name="NumeroTxt" LabelColor="DarkBlue" Text="{Binding Numero}"></EntryCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Verificar" TextColor="#000" Clicked="Button_Clicked" CornerRadius="10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

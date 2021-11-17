@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Pages.Exercicio01"
+             Title="Exercício 01">
+
+    <StackLayout Padding="10">
+        <TableView Intent="Form" HasUnevenRows="True">
+            <TableRoot>
+
+                <TableSection Title="Retornar troco" TextColor="Black">
+                    <EntryCell Label="Insira o valor do produto: " Height="40" Keyboard="Numeric" x:Name="PrecoTxt" LabelColor="Black" Text="{Binding Preco}"></EntryCell>
+                    <EntryCell Label="Digite o valor recebido:" Height="40" Keyboard="Numeric" x:Name="ValorTxt" LabelColor="Black" Text="{Binding Valor}"></EntryCell>
+                </TableSection>
+                
+            </TableRoot>
+        </TableView>
+        <Button Text="Calcular" BackgroundColor="White" BorderColor="Black" BorderWidth="1"  TextColor="Black" Clicked="Button_Clicked" CornerRadius="10"/>
+    </StackLayout>
+</ContentPage>

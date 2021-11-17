@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.MainPage"
+             xmlns:views="clr-namespace:Exercicios.Pages" xmlns:views1="clr-namespace:Exercicios">
+
+    <Shell.FlyoutHeader>
+        <views1:Cabecalho />
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Exercício 01">
+        <Tab>
+            <ShellContent>
+                <views:Exercicio01/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Exercício 02">
+        <Tab>
+            <ShellContent>
+                <views:Exercício02/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Exercício 03">
+        <Tab>
+            <ShellContent>
+                <views:Exercício03/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Exercício 04">
+        <Tab>
+            <ShellContent>
+                <views:Exercicio04/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Exercício 05">
+        <Tab>
+            <ShellContent>
+                <views:Exercicio05/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

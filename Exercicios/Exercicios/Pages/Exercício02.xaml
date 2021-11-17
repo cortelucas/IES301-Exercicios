@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Pages.Exercício02"
+             Title="Exercício 02">
+    <ContentPage.Content>
+        <StackLayout Padding="10" >
+
+            <TableView Intent="Form" HasUnevenRows="True">
+                <TableRoot>
+                    <TableSection Title="Valor do quilo calculado" TextColor="Black">
+                        <EntryCell Label="Digite o preço por quilo" Height="30" Keyboard="Numeric" x:Name="PrecoTxt" LabelColor="DarkBlue" Text="{Binding Preco}"></EntryCell>
+                        <EntryCell Label="Digite a quantidade de quilos" Height="30" Keyboard="Numeric" x:Name="QuiloTxt" LabelColor="DarkBlue" Text="{Binding Quilo}"></EntryCell>
+                    </TableSection>
+
+                    <!--
+                <TableSection Title="Total" TextColor="Black">
+                    <EntryCell Label="Valor a ser pago" Height="30" Keyboard="Numeric" x:Name="TotalTxt" LabelColor="DarkBlue" Text="{Binding Total}"></EntryCell>
+                </TableSection>
+                -->
+                </TableRoot>
+            </TableView>
+
+            <Button Text="Calcular" TextColor="Black" Clicked="Button_Clicked" CornerRadius="10"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
